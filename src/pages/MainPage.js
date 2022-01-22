@@ -122,7 +122,8 @@ const MainPage=()=>{
     }
     return(
         <section>
-        <div>Logged in as: {displayName}</div>
+        <div className="Body"></div>
+        <div className="DisplayName">Logged in as: {displayName}</div>
         <div className="MainPageCenterBox" />
         <form onSubmit={handleSubmitEditForms}>
         <button className="MainPageOptionSelector1">Edit PS Form 3883</button>
