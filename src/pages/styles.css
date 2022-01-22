@@ -1,18 +1,49 @@
+
+body {
+    overscroll-behavior: none;
+}
+.Body{
+    position:absolute;
+    background-image:linear-gradient(#161b22,#000000);
+    aspect-ratio:10/5;
+    width:100%;
+}
+.BodyLarge{
+    position:absolute;
+    background-image:linear-gradient(#161b22,#000000);
+    aspect-ratio:10/111;
+    width:100%;
+}
+.BodyHuge{
+    position:absolute;
+    background-image:linear-gradient(#161b22,#000000);
+    aspect-ratio:10/125;
+    width:100%;
+}
+.DisplayName{
+    color:#1f6feb;
+}
+  a { 
+    color:#1f6feb;
+  }
+  a:hover {
+     color: #ff7b72;
+  }
 .navigation{
     font-family:Arial,Monospace,sans-serif;
     font-size:300%;
-    background-image:linear-gradient(#2729b9,#FFFFFF);
+    background-image:linear-gradient(#21262d,#161b22);
     text-align:center;
+    color:#1f6feb;
 }
 
 .centerBoxLogin{
     position:absolute;
-    background-image:linear-gradient(#2729b9,#FFFFFF);
+    background-image:linear-gradient(#21262d,#21262d);
     aspect-ratio:10/8;
     width:50%;
-    margin:7% 0% 0% 26%;
-    opacity:.5;
-    border:.3vw solid #615d5d;
+    margin:1% 0% 0% 25%;
+    border:.3vw solid #484f58;
     border-radius:1vw;
 }
 
@@ -29,8 +60,8 @@
     position:absolute;
     font-size:2.5vw;
     font-family:Arial,Monospace,sans-serif;
-    color:black;
-    margin:10vw 0 0 46.3vw;
+    margin:4vw 0 0 46.5vw;
+    color:white;
 }
 
 .centerTextRecovery{
@@ -44,8 +75,8 @@
     position:absolute;
     font-size:2.5vw;
     font-family:Arial,Monospace,sans-serif;
-    color:black;
-    margin:10vw 0 0 39.5vw;
+    color:white;
+    margin:4vw 0 0 39.5vw;
 }
 
 .centerText{
@@ -58,19 +89,23 @@
 
 .userEmailLogin{
     position:absolute;
-    border:.2vw solid black;
+    border:.2vw solid #484f58;
     height:2vw;
     width:15vw;
-    margin:16vw 0 0 42vw;
+    margin:10vw 0 0 42vw;
     resize:none;
+    border-radius:1vw;
+    text-align:center;
 }
 .userEmailRegister{
     position:absolute;
-    border:.2vw solid black;
+    border:.2vw solid #484f58;
     height:2vw;
     width:15vw;
-    margin:17vw 0 0 42vw;
+    margin:10vw 0 0 42vw;
     resize:none;
+    border-radius:1vw;
+    text-align:center;
 }
 .userEmailRecovery{
     position:absolute;
@@ -83,11 +118,13 @@
 
 .userPasswordLogin{
     position:absolute;
-    border:.2vw solid black;
+    border:.2vw solid #484f58;
     height:2vw;
     width:15vw;
-    margin:21vw 0 0 42vw;
+    margin:14vw 0 0 42vw;
     resize:none;
+    border-radius:1vw;
+    text-align:center;
 }
 
 .workcenter{
@@ -100,8 +137,16 @@
 }
 .submitty{
     position:absolute;
-    margin:26vw 0 0 47.5vw;
+    margin:20% 0 0 48.5%;
+    background-color:#3fb950;
+    color:white;
+    border-color:#484f58;
+    border-radius:.5vw;
     
+}
+.submitty:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .submittyRecovery{
     position:absolute;
@@ -142,31 +187,30 @@
 }
 .MainPageCenterBox{
     position:absolute;
-    background-image:linear-gradient(#2729b9,#FFFFFF);
-    aspect-ratio:10/9;
+    background-color:#21262d;
+    aspect-ratio:10/8;
     width:50%;
-    margin:5% 0% 0% 23%;
-    opacity:.5;
-    border:.3vw solid #615d5d;
+    margin:3% 0% 0% 23%;
+    border:.3vw solid #484f58;
     border-radius:1vw;
 }
 .Popup{
     position:absolute;
-    background-color:#FFFFFF;
     aspect-ratio:10/3;
     width:60%;
-    margin:6% 0% 0% 18%;
-    border:.3vw solid #615d5d;
+    margin:5% 0% 0% 18%;
+    border:.3vw solid #484f58;
     border-radius:1vw;
+    background-color:#21262d;
 }
 .PopupCreation{
     position:absolute;
-    background-color:#FFFFFF;
     aspect-ratio:10/3;
     width:60%;
     margin:10% 0% 0% 21%;
-    border:.3vw solid #615d5d;
+    border:.3vw solid #484f58;
     border-radius:1vw;
+    background-color:#21262d;
 }
 .DeletePopup{
     position:absolute;
@@ -192,38 +236,44 @@
 .PopupText{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:7vw 0 0 40vw;
+    margin:7vw 0 0 41vw;
     font-size:2vw;
+    color:white;
 }
 .PopupInfo{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:11vw 0 0 30vw;
+    margin:11vw 0 0 31vw;
     font-size:1vw;
+    color:white;
 }
 .DeleteInfo{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:11vw 0 0 39vw;
+    margin:11vw 0 0 40.5vw;
     font-size:1vw;
+    color:white;
 }
 .PopupInfoCreation{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
     margin:12vw 0 0 33vw;
     font-size:2vw;
+    color:white;
 }
 .PopupInfo2{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:13vw 0 0 32vw;
+    margin:13vw 0 0 33.5vw;
     font-size:1vw;
+    color:white;
 }
 .DeleteInfo2{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:13vw 0 0 35vw;
+    margin:13vw 0 0 36vw;
     font-size:1vw;
+    color:White;
 }
 .ResetConfirm{
     position:absolute;
@@ -232,13 +282,28 @@
 }
 .DeleteConfirm{
     position:absolute;
-    margin:18vw 0 0 44vw;
+    margin:18vw 0 0 45vw;
     font-size:1vw;
+    background-color:#3fb950;
+    color:white;
+    border-color:#484f58;
+    border-radius:.5vw;
+}
+.DeleteConfirm:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .AckButton{
     position:absolute;
-    margin:20vw 0 0 47vw;
+    margin:20vw 0 0 48vw;
     font-size:1vw;
+    background-color:#3fb950;
+    border-color:#484f58;
+    border-radius:.5vw;
+}
+.AckButton:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .CreateNew{
     position:absolute;
@@ -252,8 +317,16 @@
 }
 .DeleteCancel{
     position:absolute;
-    margin:7vw 0 0 75vw;
+    margin:6vw 0 0 75vw;
     font-size:1vw;
+    background-color:#631c03;
+    border-color:#484f58;
+    border-radius:.5vw;
+    
+}
+.DeleteCancel:hover{
+    background-color:#ff7b72;
+    cursor:pointer;
 }
 .ExitManage{
     position:absolute;
@@ -273,69 +346,108 @@
 .ResetStatus{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    color:#22a74a;
-    margin:15vw 0 0 38vw;
+    color:#3fb950;
+    margin:15vw 0 0 39vw;
     font-size:1.5vw;
 }
 .MainPageOptionSelector1{
     position:absolute;
-    margin:10vw 0vw 0vw 32vw;
-    background-image:linear-gradient(#1111eb,#FFFFFF);
+    margin:7vw 0vw 0vw 33vw;
     color:#ffffff;
     width:30vw;
     height:4vw;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;   
+    background-color: #484f58;
     border-radius:1vw;
-    
+    text-align:center;
+}
+.MainPageOptionSelector1:hover{
+    border-color:#8b949e;
+    cursor:pointer;
 }
 .MainPageOptionSelector2{
     position:absolute;
-    margin:20vw 0vw 0vw 32vw;
-    background-image:linear-gradient(#1111eb,#FFFFFF);
+    margin:15vw 0vw 0vw 33vw;
+    background-color: #484f58;
     color:#ffffff;
     width:30vw;
     height:4vw;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
     border-radius:1vw;
+    text-align:center;
+}
+.MainPageOptionSelector2:hover{
+    border-color:#8b949e;
+    cursor:pointer;
 }
 .MainPageOptionSelector3{
     position:absolute;
-    margin:30vw 0vw 0vw 32vw;
-    background-image:linear-gradient(#1111eb,#FFFFFF);
+    margin:23vw 0vw 0vw 33vw;
+    background-color: #484f58;
     color:#ffffff;
     width:30vw;
     height:4vw;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
     border-radius:1vw;
+    text-align:center;
+}
+.MainPageOptionSelector3:hover{
+    border-color:#8b949e;
+    cursor:pointer;
 }
 .MainPageOptionSelector4{
     position:absolute;
-    margin:40vw 0vw 0vw 32vw;
-    background-image:linear-gradient(#1111eb,#FFFFFF);
+    margin:31vw 0vw 0vw 33vw;
+    background-color: #484f58;
     color:#ffffff;
     width:30vw;
     height:4vw;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
     border-radius:1vw;
+    text-align:center;
+}
+.MainPageOptionSelector4:hover{
+    border-color:#8b949e;
+    cursor:pointer;
+}
+.Aggregate{
+    position:absolute;
+    margin:20vw 0vw 0vw 33vw;
+    background-color: #484f58;
+    color:#ffffff;
+    width:30vw;
+    height:4vw;
+    font-family:Arial,Monospace,sans-serif;
+    font-size:2vw;
+    border-radius:1vw;
+    text-align:center;
+}
+.Aggregate:hover{
+    border-color:#8b949e;
+    cursor:pointer;
 }
 .ResetWorkcenters{
     position:absolute;
-    margin:12vw 0vw 0vw 32vw;
-    background-image:linear-gradient(#1111eb,#FFFFFF);
+    margin:12vw 0vw 0vw 33vw;
     color:#ffffff;
     width:30vw;
     height:4vw;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
+    background-color: #484f58;
     border-radius:1vw;
+    text-align:center;
 }
-
+.ResetWorkcenters:hover{
+    border-color:#8b949e;
+    cursor:pointer;
+}
   .navAction{
-  background-color:#615d5d;
+  background-color:#21262d;
  }
   .errorMessage{  
     text-align:center;
@@ -349,32 +461,41 @@
   }
   .EditFormsCenterBox{
     position:absolute;
-    background-image:linear-gradient(#2729b9,#FFFFFF);
+    background-image:linear-gradient(#21262d,#21262d);
     aspect-ratio:10/6;
     width:40%;
     margin:7% 0% 0% 30%;
-    opacity:.5;
-    border:.3vw solid #615d5d;
+    border:.3vw solid #484f58;
     border-radius:1vw;
 }
 .EditFormsCenterText{
     position:absolute;
     font-size:2vw;
     font-family:Arial,Monospace,sans-serif;
-    color:black;
+    color:white;
     margin:9vw 0 0 36vw;
 }
 .EditFormsWorkcenter{
     position:absolute;
-    border:.25vw solid black;
+    border:.3vw solid #484f58;
     height:5vw;
     width:20vw;
-    margin:15vw 0 0 39.5vw;
+    margin:15vw 0 0 39vw;
     resize:none;
+    border-radius: 1vw;
+    text-align:center;
 }
 .EditFormsSubmitty{
     position:absolute;
-    margin:24vw 0 0 48vw;
+    margin:24vw 0 0 47.5vw;
+    color:white;
+    background-color:#3fb950;
+    border-color:#484f58;
+    border-radius:.5vw;
+}
+.EditFormsSubmitty:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .correctWorkCenter{
     color:#22a74a;
@@ -396,24 +517,24 @@
     text-align:center
 }
 .validationApproved{
-    color:#22a74a;
+    color:#3fb950;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:14vw 0 0 42.5vw;
+    margin:8vw 0 0 43vw;
     font-size:1vw;
 }
 .DeleteSuccess{
-    color:#22a74a;
-    position:absolute;
-    font-family:Arial,Monospace,sans-serif;
-    margin:15vw 0 0 40.5vw;
-    font-size:1vw;
-}
-.DeleteFailure{
-    color:#a30f0f;
+    color:#3fb950;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
     margin:15vw 0 0 42vw;
+    font-size:1vw;
+}
+.DeleteFailure{
+    color:#ff7b72;
+    position:absolute;
+    font-family:Arial,Monospace,sans-serif;
+    margin:15vw 0 0 42.5vw;
     font-size:1vw;
 }
 .recoveryApproved{
@@ -424,10 +545,10 @@
     font-size:1.5vw;
 }
 .validationDenied{
-    color:#a30f0f;
+    color:#ff7b72;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:14vw 0 0 45vw;
+    margin:8vw 0 0 45vw;
     font-size:1vw;
 }
 .recoveryDenied{
@@ -438,10 +559,10 @@
     font-size:1.5vw;
 }
 .validationStatus{
-    color:#022553;
+    color:#ffffff;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:14vw 0 0 44vw;
+    margin:8vw 0 0 44vw;
     font-size:1vw;
 }
 .recoveryStatus{
@@ -452,108 +573,137 @@
     font-size:1.5vw;
 }
 .registrationDenied{
-    color:#a30f0f;
+    color:#ff7b72;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:14vw 0 0 36vw;
+    margin:8vw 0 0 37vw;
     font-size:1vw;
 }
   .MailWorkcenter{
+    position:absolute;
     font-family:Arial,Monospace,sans-serif;  
     font-size:1.5vw;
-    margin:0vw 0vw 0vw 41vw;
+    margin:0vw 0vw 0vw 42.5vw;
+    color:white;
   }
   .Date{
     font-family:Arial,Monospace,sans-serif;
     font-size:1.1vw;
     position:absolute;
     margin:0vw 0vw 0vw 15vw;
+    color:white;
   }
   .SpreadSheetCenterBox{
     position:absolute;
-    background-image:linear-gradient(#2729b9,#968f8f);
-    aspect-ratio:10/160;
+    aspect-ratio:10/155;
     width:70%;
     margin:20% 0% 0% 15%;
-    opacity:.5;
-    border:.3vw solid #615d5d;
+    background-image:linear-gradient(#21262d,#21262d);
+    border:.3vw solid #484f58;
     border-radius:1vw;
 }
 .DeliveredBy{
     position:absolute;
-    border:.3vw solid black;
+    border:.3vw solid #484f58;
     height:4vw;
     width:25vw;
     margin:4vw 0 0 15vw;
     resize:none;
+    border-radius:1vw;
+    background-color: white;
+    text-align:center;
 }
 .DeliveredByLabel{
     font-family:Arial,Monospace,sans-serif;
     font-size:1.1vw;
     position:absolute;
     margin:2.3vw 0vw 0vw 20vw;
+    color:white;
+    text-align:center;
 }
 .RecievedBy1{
     position:absolute;
-    border:.3vw solid black;
+    border:.3vw solid #484f58;
     height:4vw;
     width:25vw;
-    margin:4vw 0 0 50vw;
+    margin:4vw 0 0 57vw;
     resize:none;
+    border-radius:1vw;
+    background-color:white;
+    text-align:center;
     
 }
 .RecievedBy2{
     position:absolute;
-    border:.3vw solid black;
+    border:.3vw solid #484f58;
     height:4vw;
     width:25vw;
-    margin:13vw 0 0 50vw;
+    margin:13vw 0 0 57vw;
     resize:none;
+    border-radius:1vw;
+    background-color:white;
+    text-align:center;
 }
 .RecievedBy1Label{
     font-family:Arial,Monospace,sans-serif;
     font-size:1.1vw;
     position:absolute;
-    margin:2.3vw 0vw 0vw 56vw;
+    margin:2.3vw 0vw 0vw 63vw;
+    color:white;
 }
 .RecievedBy2Label{
     font-family:Arial,Monospace,sans-serif;
     font-size:1.1vw;
     position:absolute;
-    margin:11vw 0vw 0vw 56vw;
+    margin:11vw 0vw 0vw 63vw;
+    color:White;
 }
 
 .ArticleNum{
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
     position:absolute;
-    margin:21vw 0vw 0vw 40vw;
+    margin:21vw 0vw 0vw 41vw;
+    color:white;
 }
 .PullArticleNum{
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
     position:absolute;
-    margin:21vw 0vw 0vw 41vw;
+    margin:21vw 0vw 0vw 43vw;
+    color:white;
 }
 .input1{
     position:relative;
-    border:.2vw solid black;
+    border:.2vw solid #484f58;
     height:2vw;
     width:25vw;
-    margin:25vw 0vw 0vw 33vw;
+    margin:25vw 0vw 0vw 35vw;
     resize:none;
+    border-radius:1vw;
+    text-align:center;
 }
 .input2{
     position:relative;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1vw 0 0 33vw;
+    margin:1vw 0 0 35vw;
     resize:none;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
 }
 .Save{
     position:absolute;
-    margin:18vw 0vw 0vw 14.8vw;
+    margin:18vw 0vw 0vw 16vw;
+    background-color:#3fb950;
+    border-color:#484f58;
+    border-radius:.5vw;
+    color:white;
+}
+.Save:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .PrintAsExcel{
     position:absolute;
@@ -561,2445 +711,3065 @@
 }
 .SaveAsExcel{
     position:absolute;
+    margin:18vw 0vw 0vw 20vw;
+    background-color:#3fb950;
+    border-color:#484f58;
+    border-radius:.5vw;
+    color:white;
+}
+.SaveAsExcel:hover{
+    background-color:#39d353;
+    cursor:pointer;
+}
+.SaveAsExcel2{
+    position:absolute;
     margin:18vw 0vw 0vw 18vw;
+    background-color:#3fb950;
+    border-color:#484f58;
+    border-radius:.5vw;
+    color:white;
+}
+.SaveAsExcel2:hover{
+    background-color:#39d353;
+    cursor:pointer;
 }
 .SaveComplete{
     font-family:Arial,Monospace,sans-serif;
     font-size:1.2vw;
     position:absolute;
-    margin:18vw 0vw 0vw 16vw;
-    color:#22a74a;
+    margin:16vw 0vw 0vw 17vw;
+    color:#39d353;
 }
 .Output1{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:25vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:25vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output2{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:29vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:29vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output3{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:33vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:33vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output4{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:37vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:37vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output5{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:41vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:41vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output6{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:45vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:45vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output7{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:49vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:49vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output8{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:53vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:53vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output9{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:57vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:57vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output10{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:61vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:61vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output11{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:65vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:65vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output12{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:69vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:69vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output13{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:73vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:73vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output14{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:77vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:77vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output15{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:81vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:81vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output16{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:85vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:85vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output17{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:89vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:89vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output18{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:93vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:93vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output19{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:97vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:97vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output20{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:101vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:101vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output21{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:105vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:105vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output22{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:109vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:109vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output23{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:113vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:113vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output24{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:117vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:117vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output25{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:121vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:121vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output26{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:125vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:125vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output27{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:129vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:129vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output28{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:133vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:133vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output29{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:137vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:137vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output30{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:141vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:141vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output31{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:145vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:145vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output32{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:149vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:149vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output33{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:153vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:153vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output34{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:157vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:157vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output35{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:160.5vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:160.5vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output36{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:164vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:164vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output37{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:168vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:168vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output38{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:172vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:172vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output39{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:176vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:176vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output40{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:180vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:180vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output41{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:184vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:184vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output42{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:188vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:188vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output43{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:192vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:192vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output44{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:196vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:196vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output45{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:200vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:200vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output46{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:204vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:204vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output47{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:208vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:208vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output48{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:212vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:212vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output49{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:216vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:216vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output50{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:220vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:220vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output51{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:224vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:224vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output52{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:228vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:228vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output53{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:232vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:232vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output54{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:236vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:236vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output55{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:240vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:240vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output56{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:244vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:244vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output57{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:248vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:248vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output58{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:252vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:252vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output59{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:256vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:256vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output60{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:260vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:260vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output61{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:264vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:264vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output62{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:268vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:268vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output63{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:272vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:272vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output64{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:276vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:276vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output65{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:280vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:280vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output66{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:284vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:284vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output67{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:288vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:288vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output68{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:292vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:292vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output69{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:296vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:296vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output70{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:300vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:300vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output71{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:304vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:304vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output72{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:308vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:308vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output73{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:312vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:312vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output74{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:316vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:316vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output75{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:320vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:320vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output76{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:324vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:324vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output77{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:328vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:328vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output78{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:332vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:332vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output79{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:336vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:336vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output80{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:340vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:340vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output81{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:344vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:344vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output82{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:348vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:348vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output83{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:352vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:352vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output84{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:356vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:356vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output85{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:360vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:360vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output86{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:364vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:364vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output87{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:368vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:368vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output88{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:372vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:372vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output89{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:376vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:376vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output90{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:380vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:380vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output91{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:384vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:384vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output92{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:388vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:388vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output93{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:392vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:392vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output94{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:396vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:396vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output95{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:400vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:400vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output96{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:404vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:404vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output97{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:408vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:408vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output98{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:412vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:412vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output99{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:416vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:416vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output100{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:420vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:420vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output101{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:424vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:424vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output102{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:428vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:428vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output103{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:432vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:432vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output104{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:436vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:436vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output105{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:440vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:440vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output106{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:444vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:444vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output107{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:448vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:448vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output108{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:452vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:452vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output109{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:456vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:456vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output110{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:460vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:460vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output111{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:464vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:464vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output112{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:468vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:468vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output113{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:472vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:472vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output114{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:476vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:476vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output115{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:480vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:480vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output116{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:484vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:484vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output117{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:488vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:488vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output118{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:492vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:492vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output119{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:496vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:496vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output120{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:500vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:500vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output121{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:504vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:504vw 0vw 0vw 35Vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output122{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:508vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:508vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output123{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:512vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:512vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output124{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:516vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:516vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output125{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:520vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:520vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output126{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:524vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:524vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output127{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:528vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:528vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output128{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:532vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:532vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output129{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:536vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:536vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output130{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:540vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:540vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output131{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:544vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:544vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output132{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:548vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:548vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output133{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:552vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:552vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output134{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:556vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:556vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output135{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:560vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:560vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output136{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:564vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:564vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output137{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:568vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:568vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output138{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:572vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:572vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output139{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:576vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:576vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output140{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:580vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:580vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output141{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:584vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:584vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output142{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:588vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:588vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output143{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:592vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:592vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output144{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:596vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:596vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output145{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:600vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:600vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output146{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:604vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:604vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output147{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:608vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:608vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output148{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:612vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:612vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 
 .Output149{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:616vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:616vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output150{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:620vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:620vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output151{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:624vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:624vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output152{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:628vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:628vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output153{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:632vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:632vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output154{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:636vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:636vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output155{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:640vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:640vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output156{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:644vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:644vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output157{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:648vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:648vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output158{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:652vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:652vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output159{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:656vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:656vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output160{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:660vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:660vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output161{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:664vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:664vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output162{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:668vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:668vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output163{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:672vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:672vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output164{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:676vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:676vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output165{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:680vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:680vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output166{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:684vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:684vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output167{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:688vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:688vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output168{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:692vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:692vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output169{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:696vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:696vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output170{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:700vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:700vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output171{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:704vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:704vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output172{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:708vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:708vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output173{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:712vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:712vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output174{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:716vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:716vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output175{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:720vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:720vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output176{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:724vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:724vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output177{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:728vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:728vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output178{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:732vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:732vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output179{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:736vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:736vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output180{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:740vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:740vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output181{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:744vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:744vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output182{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:748vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:748vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output183{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:752vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:752vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output184{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:756vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:756vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output185{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:760vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:760vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output186{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:764vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:764vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output187{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:768vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:768vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output188{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:772vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:772vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output189{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:776vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:776vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output190{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:780vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:780vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output191{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:784vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:784vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output192{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:788vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:788vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output193{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:792vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:792vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output194{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:796vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:796vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output195{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:800vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:800vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output196{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:804vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:804vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output197{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:808vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:808vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output198{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:812vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:812vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output199{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:816vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:816vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output200{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:820vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:820vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output201{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:824vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:824vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output202{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:828vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:828vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output203{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:832vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:832vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output204{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:836vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:836vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output205{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:840vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:840vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output206{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:844vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:844vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output207{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:848vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:848vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output208{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:852vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:852vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output209{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:856vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:856vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output210{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:860vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:860vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output211{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:864vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:864vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output212{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:868vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:868vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output213{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:872vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:872vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output214{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:876vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:876vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output215{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:880vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:880vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output216{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:884vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:884vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output217{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:888vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:888vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output218{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:892vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:892vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output219{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:896vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:896vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output220{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:900vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:900vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output221{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:904vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:904vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output222{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:908vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:908vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output223{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:912vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:912vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output224{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:916vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:916vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output225{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:920vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:920vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output226{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:924vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:924vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output227{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:928vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:928vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output228{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:932vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:932vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output229{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:936vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:936vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output230{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:940vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:940vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output231{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:944vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:944vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output232{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:948vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:948vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output233{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:952vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:952vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output234{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:956vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:956vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output235{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:960vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:960vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output236{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:964vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:964vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output237{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:968vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:968vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output238{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:972vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:972vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output239{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:976vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:976vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output240{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:980vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:980vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output241{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:984vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:984vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output242{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:988vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:988vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output243{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:992vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:992vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output244{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:996vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:996vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output245{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1000vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1000vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output246{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1004vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1004vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output247{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1008vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1008vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output248{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1012vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1012vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output249{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1016vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1016vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output250{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1020vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1020vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output251{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1024vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1024vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output252{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1028vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1028vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output253{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1032vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1032vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output254{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1036vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1036vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output255{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1040vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1040vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output256{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1044vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1044vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output257{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1048vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1048vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output258{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1052vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1052vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output259{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1056vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1056vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output260{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1060vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1060vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output261{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1064vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1064vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output262{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1068vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1068vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output263{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1072vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1072vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output264{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1076vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1076vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output265{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1080vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1080vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output266{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1084vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1084vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output267{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1088vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1088vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output268{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1092vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1092vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output269{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1096vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1096vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output270{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1100vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1100vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output271{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1104vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1104vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output272{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1108vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1108vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output273{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1112vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1112vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output274{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1116vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1116vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output275{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1120vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1120vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output276{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1124vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1124vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output277{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1128vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1128vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output278{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1132vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1132vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output279{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1136vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1136vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output280{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1140vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1140vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output281{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1144vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1144vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output282{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1148vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1148vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output283{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1152vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1152vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output284{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1156vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1156vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output285{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1160vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1160vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output286{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1164vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1164vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output287{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1168vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1168vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output288{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1172vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1172vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output289{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1176vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1176vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output290{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1180vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1180vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output291{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1184vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1184vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output292{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1188vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1188vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output293{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1192vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1192vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output294{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1196vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1196vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output295{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1200vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1200vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output296{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1204vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1204vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output297{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1208vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1208vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output298{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1212vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1212vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output299{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1216vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1216vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 .Output300{
     position:absolute;
-    border:.2vw solid black;
     height:2vw;
     width:25vw;
-    margin:1220vw 0vw 0vw 33vw;
-    background-color: #FFFFFF;
+    margin:1220vw 0vw 0vw 35vw;
+    border-radius:1vw;
+    text-align:center;
+    border:.2vw solid #484f58;
+    background-color:white;
 }
 
 .PullCenterBox{
     position:absolute;
-    background-image:linear-gradient(#2729b9,#968f8f);
     aspect-ratio:10/175;
     width:70%;
     margin:20% 0% 0% 15%;
-    opacity:.5;
-    border:.3vw solid #615d5d;
+    background-image:linear-gradient(#21262d,#21262d);
+    border:.3vw solid #484f58;
     border-radius:1vw;
 }
 .GenerateSelect{
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
-    margin:1vw 0vw 0vw 36.5vw;
+    margin:4vw 0vw 0vw 37.5vw;
+    color:white;
 }
 .ShowLink{
-    color:#22a74a;
+    color:#1f6feb;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:28vw 0 0 40vw;
+    margin:28vw 0 0 41vw;
     font-size:1.5vw;
 }
 .ConGenerating{
-    color:#022553;
+    color:#1f6feb;
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
-    margin:8vw 0 0 43vw;
+    margin:8vw 0 0 44vw;
     font-size:1.5vw;
 }
 .DisplayName{

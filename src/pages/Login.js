@@ -80,6 +80,7 @@ useEffect(()=>{
   return(
     <section>
       <nav className="navigation">DBAMS</nav>
+      <div className="Body"></div>
       <div className="centerBoxLogin"></div>
       <div className="centerTextLogin">Login</div>
       <form onSubmit={handleSubmit}>

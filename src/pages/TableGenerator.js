@@ -27515,11 +27515,12 @@ if(workcenterNumber.match(uso)){
 
     return(
         <section>
+            <div className="BodyLarge"></div>
             <div className="DisplayName">Logged in as: {displayName}</div>
             <div className="SaveComplete">{error}</div>
             <div className="Date">Date of Delivery:{date}</div>
-            <div className="MailWorkcenter">Mail for {workcenterNumber}</div>
             <div className="SpreadSheetCenterBox"></div>
+            <div className="MailWorkcenter">Mail for {workcenterNumber}</div>
             <form onSubmit={handleSubmit}>
             <button type="submit" className="Save" onClick={handleSave}>Save</button>
             <button type="submit" className="SaveAsExcel" onClick={saveAsExcel}>Save as Excel Document</button>

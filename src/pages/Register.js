@@ -106,6 +106,7 @@ useEffect(()=>{
     }
     return(
         <section>
+          <div className="Body"></div>
           <div>Logged in as: {displayName}</div>
           <div className="centerBoxLogin"></div>
           <div className="centerTextRegister">Register New User</div>

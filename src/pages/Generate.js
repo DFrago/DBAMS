@@ -9446,12 +9446,13 @@ if(workcenterNumber.match(uso)){
     }
   return(
       <section>
-      <div>Logged in as: {displayName}</div>
-      <div className="GenerateSelect">Please Select an Option</div> 
+      <div className="Body"></div>
+      <div className="DisplayName">Logged in as: {displayName}</div>
       <div className="MainPageCenterBox"></div>
+      <div className="GenerateSelect">Please Select an Option</div> 
       <div className="ConGenerating">{conGenerating}</div>
         <form onSubmit={handleSubmit2}>
-        <button onClick={showData}className="MainPageOptionSelector2">Generate Aggreggated PS 3883</button>
+        <button onClick={showData}className="Aggregate">Generate Aggreggated PS 3883</button>
         <button onClick={resetWorkcenters}className="ResetWorkcenters">Reset Workcenters</button>
         <div className="ShowLink">
           <a href={conURL}>{toggleView}</a>

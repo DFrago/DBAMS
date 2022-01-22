@@ -96,9 +96,10 @@ const Historical=()=>{
   
   return(
       <section>
+      <div className="Body"></div>
       <div>Logged in as: {displayName}</div>
-      <div className="EditFormsCenterText">Scan Workcenter Barcode below</div>
       <div className="EditFormsCenterBox"></div>
+      <div className="EditFormsCenterText">Scan Workcenter Barcode below</div>
       <form onSubmit={handleSubmit}>
       <input className="EditFormsWorkcenter" type="text" placeholder="Workcenter...." ref={workcenterScan} />
       <button className="EditFormsSubmitty" onClick={handleClick}>Submit</button>
