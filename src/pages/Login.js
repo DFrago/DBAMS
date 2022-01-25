@@ -2,7 +2,8 @@ import React,{useState,useRef,useEffect} from 'react'
 import './styles.css'
 import {useNavigate} from "react-router-dom"
 import {getAuth,signInWithEmailAndPassword} from "firebase/auth"
-
+import {TailSpin} from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 export default function Login(){
   const [loginEmail,setLoginEmail]=useState("")
   const [loginPassword,setLoginPassword]=useState("")
@@ -25,12 +26,12 @@ useEffect(()=>{
     }
     if(validation===2){
       return(
-        <div className="validationApproved">User successfully authenticated</div>
+        <div className="LoginSpinny"><TailSpin color="#3fb950" height={34} width={34}/></div>
       )
     }
     if(validation===3){
       return(
-        <div className="validationStatus">Verifying login credentials...</div>
+        <div className="LoginSpinny"><TailSpin color="#1f6feb" height={34} width={34}/></div> 
       )
     }
     else if(validation===1){

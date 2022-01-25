@@ -2,7 +2,8 @@ import React,{useState,useRef,useEffect} from 'react'
 import './styles.css'
 import {getAuth,createUserWithEmailAndPassword} from "firebase/auth"
 import {useNavigate} from 'react-router-dom'
-
+import {TailSpin} from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 const Register=()=>{
     const [viewComplete,setviewComplete]=useState(false)
     const [displayName,setdisplayName]=useState("")
@@ -38,11 +39,11 @@ useEffect(()=>{
 },[])
   const Validate=()=>{
     if(validation===0){
-      return <div></div>
-    }
+      return <div>""</div>
+    } 
     if(validation===3){
       return(
-        <div className="validationStatus">Submitting login credentials...</div>
+        <div className="RegisterSpinny"><TailSpin color="#1f6feb" height={34} width={34}/></div>
       )
     }
     else if(validation===1){

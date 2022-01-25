@@ -12,6 +12,7 @@ import Recovery from "./pages/Recovery"
 import TableGenerator from "./pages/TableGenerator"
 import PullTable from "./pages/PullTable"
 import "./pages/styles.css"
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 function App() {
   return (
     <Router>

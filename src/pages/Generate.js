@@ -4,6 +4,8 @@ import Firebase from "../firebase/firebaseIndex" //firebase
 import { getFirestore,collection, getDocs} from "firebase/firestore";
 import {useNavigate} from 'react-router-dom'
 import { doc,updateDoc} from "firebase/firestore";
+import {TailSpin} from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 const db=getFirestore(Firebase)
 const Generate=()=>{
   //Begin Workcenter Refs//
@@ -64,7 +66,7 @@ const Generate=()=>{
     },[]);  
     const [conURL,setconURL]=useState("")
     const [toggleView,settoggleView]=useState("")
-    const[conGenerating,setconGenerating]=useState("");
+    const[showSpinny,setshowSpinny]=useState(false);
     const sleep = (milliseconds) => {
       return new Promise(resolve => setTimeout(resolve, milliseconds))
     }
@@ -86,8 +88,8 @@ const Generate=()=>{
     aggregate();
   });
     const showData=()=>{
-      setconGenerating("Generating...")
-      sleep(7000).then(()=>{setconGenerating("")})
+      setshowSpinny(true)
+      sleep(7000).then(()=>{setshowSpinny(false)})
       sleep(7000).then(()=>{
       const url=URL.createObjectURL(new Blob([totalData.join("")],{type:"text/plain"}))
       const link=document.createElement('a');
@@ -9444,13 +9446,22 @@ if(workcenterNumber.match(uso)){
         return null
       }
     }
+    const GenerateSpinny=()=>{
+      if(showSpinny===true){
+        return(
+          <div className="GenerateSpinny"><TailSpin color="#1f6feb" height={40} width={40}/></div> 
+        )
+      }
+      else{
+        return null;
+      }
+    }
   return(
       <section>
       <div className="Body"></div>
       <div className="DisplayName">Logged in as: {displayName}</div>
       <div className="MainPageCenterBox"></div>
       <div className="GenerateSelect">Please Select an Option</div> 
-      <div className="ConGenerating">{conGenerating}</div>
         <form onSubmit={handleSubmit2}>
         <button onClick={showData}className="Aggregate">Generate Aggreggated PS 3883</button>
         <button onClick={resetWorkcenters}className="ResetWorkcenters">Reset Workcenters</button>
@@ -9459,6 +9470,7 @@ if(workcenterNumber.match(uso)){
         </div>
         </form>
         <Popup />
+        <GenerateSpinny />
       </section>
       
     )
