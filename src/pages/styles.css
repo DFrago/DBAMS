@@ -462,11 +462,17 @@ body {
   background-color:#21262d;
  }
   .errorMessage{  
+    position:absolute;
     text-align:center;
     font-family:Arial,Monospace,sans-serif;
+    color:white;
+    margin:0vw 0vw 0vw 40vw
   }
   .errorImage{
+      position:absolute;
       text-align:center;
+      color:white;
+      margin: 0vw 0vw 0vw 36vw
   }
   .errortext{
     font-family:Arial,Monospace,sans-serif;
