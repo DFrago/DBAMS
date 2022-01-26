@@ -530,9 +530,12 @@ body {
     font-size:1vw;
 }
 .logoutStatus{
+    position:absolute;
     font-family:Arial,Monospace,sans-serif;
     font-size:2vw;
-    text-align:center
+    text-align:center;
+    color:White;
+    margin:0vw 0vw 0vw 18vw
 }
 .validationApproved{
     color:#3fb950;
@@ -3794,4 +3797,7 @@ body {
     position:absolute;
     font-family:Arial,Monospace,sans-serif;
     margin:0vw 0 0 80vw;
+}
+.Testing{
+    position:absolute;
 }

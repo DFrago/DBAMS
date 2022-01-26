@@ -17,7 +17,10 @@ const Creation=()=>{
     const navigate=useNavigate();
     sleep(2000).then(()=>{navigate("/Login")})
     return(
+        <section>
+        <div className="Body"></div>
         <div className="logoutStatus">Account successfully created, you will be returned to the Login page.</div>
+        </section>
     )
 }
 export default Creation;

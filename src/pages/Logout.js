@@ -30,9 +30,12 @@ const Logout=()=>{
 
     }
     return(
+        <section>
+        <div className="Body"></div>
         <div className="logoutStatus">
            You have been signed out successfully, returning you to Login screen
         </div>
+        </section>
     )
 }
 export default Logout;
