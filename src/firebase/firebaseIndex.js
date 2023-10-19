@@ -2,7 +2,6 @@ import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDZ1Pqt-i2L1z996NSuG20z9igEPNXXk0w",
     authDomain: "dbamsstorage.firebaseapp.com",
     projectId: "dbamsstorage",
     storageBucket: "dbamsstorage.appspot.com",
